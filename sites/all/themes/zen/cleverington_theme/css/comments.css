@@ -1,88 +1,119 @@
-/*
-Syntax error: Invalid CSS after "@import ": expected file to import (string or url()), was "base;"
-        on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss
-        from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss
-        from line 6 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/comments.scss
+/**
+ * @file
+ * Comment Styling
+ */
+/* line 9, ../sass/comments.scss */
+.comments {
+  /* Wrapper for the list of comments and its title */
+  margin: 1.5em 0;
+}
+/* line 12, ../sass/comments.scss */
+.comments h2.title {
+  /* Heading for the list of comments */
+}
+/* line 15, ../sass/comments.scss */
+.comments h2.comment-form {
+  /* Heading for the comment form */
+}
 
-Backtrace:
-/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss:10
-/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss:100
-/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/comments.scss:6
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1130:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1048:in `expr!'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:302:in `block in import_directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `loop'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `import_directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:163:in `special_directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:135:in `directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:526:in `block_contents'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:274:in `to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:222:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"@import \": expected file to import (string or url()), was \"base;\"\A         on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss\A         from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss\A         from line 6 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/comments.scss"; }
+/* line 19, ../sass/comments.scss */
+.comment {
+  /* Wrapper for a single comment */
+}
+/* line 21, ../sass/comments.scss */
+.comment.comment-preview {
+  /* Preview of the comment before submitting new or updated comment */
+  background-color: #ffffea;
+  /* Drupal core will use a #ffffea background. See #1110842 */
+}
+/* line 25, ../sass/comments.scss */
+.comment.new {
+  /* A new comment since the user last viewed the page. */
+}
+/* line 28, ../sass/comments.scss */
+.comment.first {
+  /* The first comment in the list of comments */
+}
+/* line 31, ../sass/comments.scss */
+.comment.last {
+  /* The last comment in the list of comments */
+}
+/* line 34, ../sass/comments.scss */
+.comment.odd {
+  /* An odd-numbered comment in the list of comments */
+}
+/* line 37, ../sass/comments.scss */
+.comment.even {
+  /* An even-numbered comment in the list of comments */
+}
+/* line 40, ../sass/comments.scss */
+.comment.comment-by-anonymous {
+  /* A comment created by an anonymous user */
+}
+/* line 43, ../sass/comments.scss */
+.comment.comment-by-node-author {
+  /* A comment created by the node's author */
+}
+/* line 46, ../sass/comments.scss */
+.comment.comment-by-viewer {
+  /* A comment created by the current user */
+}
+/* line 49, ../sass/comments.scss */
+.comment h3.comment-title {
+  /* Comment title */
+}
+/* line 52, ../sass/comments.scss */
+.comment .new {
+  /* "New" marker for comments that are new for the current user */
+  color: #c00;
+}
+/* line 56, ../sass/comments.scss */
+.comment .user-picture {
+  /* The picture of the comment author */
+}
+/* line 59, ../sass/comments.scss */
+.comment .submitted {
+  /* The "posted by" information */
+}
+/* line 62, ../sass/comments.scss */
+.comment .permalink {
+  /* Comment's permalink wrapper */
+  text-transform: uppercase;
+  font-size: 75%;
+}
+/* line 67, ../sass/comments.scss */
+.comment .user-signature {
+  /* The user's signature */
+}
+/* line 70, ../sass/comments.scss */
+.comment ul.links {
+  /* Comment links. See also the ul.links declaration in the pages.css. */
+}
+
+/* line 74, ../sass/comments.scss */
+.indented {
+  /* Nested comments are indented */
+  margin-left: 30px;
+  /* Drupal core uses a 25px left margin */
+}
+
+/* line 78, ../sass/comments.scss */
+.comment-unpublished {
+  /* Unpublished comments */
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */
+}
+/* line 81, ../sass/comments.scss */
+.comment-unpublished p.unpublished {
+  /* The word "Unpublished" displayed underneath the content. */
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+}

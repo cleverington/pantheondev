@@ -1,88 +1,164 @@
-/*
-Syntax error: Invalid CSS after "@import ": expected file to import (string or url()), was "base;"
-        on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss
-        from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss
-        from line 6 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/blocks.scss
+/**
+ * @file
+ * Block Styling
+ */
+/* line 9, ../sass/blocks.scss */
+.block {
+  /* Block wrapper */
+  margin-bottom: 1.5em;
+}
+/* line 12, ../sass/blocks.scss */
+.block.first {
+  /* The first block in the region */
+}
+/* line 15, ../sass/blocks.scss */
+.block.last {
+  /* The last block in the region */
+}
+/* line 18, ../sass/blocks.scss */
+.block.odd {
+  /* Zebra striping for each block in the region */
+}
+/* line 21, ../sass/blocks.scss */
+.block.even {
+  /* Zebra striping for each block in the region */
+}
+/* line 24, ../sass/blocks.scss */
+.block h2.block-title {
+  /* Block title */
+}
 
-Backtrace:
-/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss:10
-/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss:100
-/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/blocks.scss:6
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1130:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1048:in `expr!'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:302:in `block in import_directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `loop'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `import_directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:163:in `special_directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:135:in `directive'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:526:in `block_contents'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:274:in `to_tree'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:222:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"@import \": expected file to import (string or url()), was \"base;\"\A         on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss\A         from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss\A         from line 6 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/blocks.scss"; }
+/* line 29, ../sass/blocks.scss */
+#block-aggregator-category-1 {
+  /* Block for the latest news items in the first category */
+}
+
+/* line 32, ../sass/blocks.scss */
+#block-aggregator-feed-1 {
+  /* Block for the latest news items in the first feed */
+}
+
+/* line 35, ../sass/blocks.scss */
+#block-block-1 {
+  /* First block created with "Add block" link */
+}
+
+/* line 38, ../sass/blocks.scss */
+#block-blog-recent {
+  /* "Recent blog posts" block */
+}
+
+/* line 41, ../sass/blocks.scss */
+#block-book-navigation {
+  /* "Book navigation" block for the current book's table of contents */
+}
+
+/* line 44, ../sass/blocks.scss */
+#block-comment-recent {
+  /* "Recent comments" block */
+}
+
+/* line 47, ../sass/blocks.scss */
+#block-forum-active {
+  /* "Active forum topics" block */
+}
+
+/* line 50, ../sass/blocks.scss */
+#block-forum-new {
+  /* "New forum topics" block */
+}
+
+/* line 53, ../sass/blocks.scss */
+#block-locale-language {
+  /* Language switcher block */
+}
+
+/* line 56, ../sass/blocks.scss */
+#block-menu-menu-NAME {
+  /* Custom menu block */
+}
+
+/* line 59, ../sass/blocks.scss */
+#block-node-recent {
+  /* "Recent content" block */
+}
+
+/* line 62, ../sass/blocks.scss */
+#block-node-syndicate {
+  /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
+}
+
+/* line 65, ../sass/blocks.scss */
+#block-poll-recent {
+  /* "Most recent poll" block */
+}
+
+/* line 68, ../sass/blocks.scss */
+#block-profile-author-information {
+  /* "Author information" block for the profile of the page's author */
+}
+
+/* line 71, ../sass/blocks.scss */
+#block-search-form {
+  /* "Search form" block */
+}
+
+/* line 74, ../sass/blocks.scss */
+#block-shortcut-shortcuts {
+  /* "Shortcuts" block */
+}
+
+/* line 77, ../sass/blocks.scss */
+#block-statistics-popular {
+  /* "Popular content" block */
+}
+
+/* line 80, ../sass/blocks.scss */
+#block-system-main-menu {
+  /* "Main menu" block */
+}
+
+/* line 83, ../sass/blocks.scss */
+#block-system-management {
+  /* "Management" block for Drupal management menu */
+}
+
+/* line 86, ../sass/blocks.scss */
+#block-system-navigation {
+  /* "Navigation" block for Drupal navigation menu */
+}
+
+/* line 89, ../sass/blocks.scss */
+#block-system-user-menu {
+  /* "User menu" block for Drupal user menu */
+}
+
+/* line 92, ../sass/blocks.scss */
+#block-system-help {
+  /* "System help" block */
+}
+
+/* line 95, ../sass/blocks.scss */
+#block-system-main {
+  /* "Main page content" block */
+}
+
+/* line 98, ../sass/blocks.scss */
+#block-system-powered-by {
+  /* "Powered by Drupal" block */
+}
+
+/* line 101, ../sass/blocks.scss */
+#block-user-login {
+  /* "User login form" block */
+}
+
+/* line 104, ../sass/blocks.scss */
+#block-user-new {
+  /* "Who's new" block for a list of the newest users */
+}
+
+/* line 107, ../sass/blocks.scss */
+#block-user-online {
+  /* "Who's online" block for a list of the online users */
+}
