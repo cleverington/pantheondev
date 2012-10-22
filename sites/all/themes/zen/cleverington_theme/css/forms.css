@@ -1,144 +1,88 @@
-/**
- * @file
- * Form Styling
- */
-
-
-.form-item { /* Wrapper for a form element (or group of form elements) and its label */
-  margin: 1.5em 0;
-}
-
-.form-item input.error,
-.form-item textarea.error,
-.form-item select.error { /* Highlight the form elements that caused a form submission error */
-  border: 1px solid #c00;
-}
-
-.form-item label { /* The label for a form element */
-  display: block;
-  font-weight: bold;
-}
-
-.form-item label.option { /* The label for a radio button or checkbox */
-  display: inline;
-  font-weight: normal;
-}
-
-.form-required { /* The part of the label that indicates a required field */
-  color: #c00;
-}
-
-.form-item .description { /* The descriptive help text (separate from the label) */
-  font-size: 0.85em;
-}
-
-.form-checkboxes .form-item,
-.form-radios .form-item { /* Pack groups of checkboxes and radio buttons closer together */
-  margin: 0; /* Drupal core uses "0.4em 0" */
-}
-
-.form-submit { /* The submit button */
-}
-
-.container-inline div,
-.container-inline label { /* Inline labels and form divs */
-  display: inline;
-}
-
-.tips { /* Tips for Drupal's input formats */
-}
-
-a.button { /* Buttons used by contrib modules like Media */
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-}
-
 /*
- * Password confirmation
- */
+Syntax error: Invalid CSS after "@import ": expected file to import (string or url()), was "base;"
+        on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss
+        from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss
+        from line 6 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/forms.scss
 
-.password-parent,
-.confirm-parent {
-  margin: 0;
-}
-
-/*
- * Search (search-block-form.tpl.php)
- */
-
-#block-search-form { /* Wrapper for the search form */
-}
-
-/*
- * Drupal's default login form block
- */
-
-#user-login-form {
-  text-align: left; /* LTR */
-}
-
-/*
- * OpenID
- *
- * The default styling for the OpenID login link seems to assume Garland's
- * styling of list items.
- */
-
-#user-login-form ul { /* OpenID creates a new ul above the login form's links. */
-  margin-bottom: 0; /* Position OpenID's ul next to the rest of the links. */
-}
-
-html.js #user-login-form li.openid-link,
-#user-login-form li.openid-link { /* The "Log in using OpenID" link. */
-  margin-top: 1.5em;
-  margin-left: -20px; /* LTR */ /* Un-do some of the padding on the ul list. */
-}
-
-#user-login-form li.user-link { /* The "Cancel OpenID login" link. */
-  margin-top: 1.5em;
-}
-
-#user-login ul {
-  margin: 1.5em 0;
-}
-
-/*
- * Drupal admin tables
- *
- * We overrode these styles in normalize.css, but restore them for the admin
- * section of the site.
- */
-
-form th {
-  text-align: left; /* LTR */
-  padding-right: 1em; /* LTR */
-  border-bottom: 3px solid #ccc;
-}
-
-form tbody {
-  border-top: 1px solid #ccc;
-}
-
-form tr.even {
-  background-color: #fff;
-}
-
-form table .item-list ul {
-  margin: 0;
-}
-
-.lt-ie8 tr.even th,
-.lt-ie8 tr.even td,
-.lt-ie8 tr.odd th,
-.lt-ie8 tr.odd td {
-  border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
-}
-
-/*
- * Drupal core wrongly puts this in system.menus.css. Since we override that, add it back.
- */
-
-td.menu-disabled {
-  background: #ccc;
-}
+Backtrace:
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss:10
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss:100
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/forms.scss:6
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1130:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1048:in `expr!'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:302:in `block in import_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `loop'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `import_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:163:in `special_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:135:in `directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:526:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:274:in `to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:222:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"@import \": expected file to import (string or url()), was \"base;\"\A         on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss\A         from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss\A         from line 6 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/forms.scss"; }

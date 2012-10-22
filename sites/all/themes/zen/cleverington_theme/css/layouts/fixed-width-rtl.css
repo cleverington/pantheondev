@@ -1,143 +1,95 @@
-/**
- * @file
- * RTL companion for the fixed-width.css file.
- */
-
-
 /*
- * Center the page.
- */
+Syntax error: Invalid CSS after "@import ": expected file to import (string or url()), was "base;"
+        on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss
+        from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss
+        from line 12 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/layouts/fixed-width.scss
+        from line 11 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/layouts/fixed-width-rtl.scss
 
-#page,
-.region-bottom {
-  /* If you want to make the page a fixed width and centered in the viewport,
-   * this is the standards-compliant way to do that. */
-  margin-left: auto;
-  margin-right: auto;
-  width: 980px;
-}
-
-/*
- * Apply the shared properties of grid items in a single, efficient ruleset.
- */
-
-#header,
-#content,
-#navigation,
-.region-sidebar-first,
-.region-sidebar-second,
-#footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 0 !important;
-  word-wrap: break-word;
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
-}
-
-/*
- * Containers for grid items and flow items.
- */
-
-#header,
-#main,
-#footer {
-  *position: relative;
-  *zoom: 1;
-}
-#header:before, #header:after,
-#main:before, #main:after,
-#footer:before, #footer:after {
-  content: "";
-  display: table;
-}
-#header:after,
-#main:after,
-#footer:after {
-  clear: both;
-}
-
-/*
- * Navigation bar
- */
-
-#main {
-  padding-top: 3em; /* Move all the children of #main down to make room. */
-  position: relative;
-}
-
-#navigation {
-  position: absolute;
-  top: 0; /* Move the navbar up inside #main's padding. */
-  height: 3em;
-  width: 960px;
-}
-
-/*
- * The layout when there is only one sidebar, the left one.
- */
-
-.sidebar-first #content {
-  /* Span 4 columns, starting in 2nd column from left. */
-  float: right;
-  width: 764px;
-  margin-right: 196px;
-  margin-left: -980px;
-}
-
-.sidebar-first .region-sidebar-first {
-  /* Span 1 column, starting in 1st column from left. */
-  float: right;
-  width: 176px;
-  margin-right: 0px;
-  margin-left: -196px;
-}
-
-/*
- * The layout when there is only one sidebar, the right one.
- */
-
-.sidebar-second #content {
-  /* Span 4 columns, starting in 1st column from left. */
-  float: right;
-  width: 764px;
-  margin-right: 0px;
-  margin-left: -784px;
-}
-
-.sidebar-second .region-sidebar-second {
-  /* Span 1 column, starting in 5th column from left. */
-  float: right;
-  width: 176px;
-  margin-right: 784px;
-  margin-left: -980px;
-}
-
-/*
- * The layout when there are two sidebars.
- */
-
-.two-sidebars #content {
-  /* Span 3 columns, starting in 2nd column from left. */
-  float: right;
-  width: 568px;
-  margin-right: 196px;
-  margin-left: -784px;
-}
-
-.two-sidebars .region-sidebar-first {
-  /* Span 1 column, starting in 1st column from left. */
-  float: right;
-  width: 176px;
-  margin-right: 0px;
-  margin-left: -196px;
-}
-
-.two-sidebars .region-sidebar-second {
-  /* Span 1 column, starting in 5th column from left. */
-  float: right;
-  width: 176px;
-  margin-right: 784px;
-  margin-left: -980px;
-}
+Backtrace:
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss:10
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss:100
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/layouts/fixed-width.scss:12
+/home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/layouts/fixed-width-rtl.scss:11
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1130:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1066:in `expected'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:1048:in `expr!'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:302:in `block in import_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `loop'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:301:in `import_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:163:in `special_directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:135:in `directive'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:536:in `block_child'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:526:in `block_contents'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:70:in `stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/scss/parser.rb:27:in `parse'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:342:in `_to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:274:in `to_tree'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:222:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:224:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `call'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:73:in `run_callback'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:55:in `callback_action'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/path.rb:35:in `update'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:39:in `block in modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:37:in `modified'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/state/directory.rb:18:in `refresh'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `each'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:17:in `block in run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `loop'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/backends/polling.rb:15:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm/monitor.rb:26:in `run'
+/var/lib/gems/1.9.1/gems/fssm-0.2.9/lib/fssm.rb:70:in `monitor'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
+/var/lib/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"@import \": expected file to import (string or url()), was \"base;\"\A         on line 10 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_custom.scss\A         from line 100 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/_base.scss\A         from line 12 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/layouts/fixed-width.scss\A         from line 11 of /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass/layouts/fixed-width-rtl.scss"; }
