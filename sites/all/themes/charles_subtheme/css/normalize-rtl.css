@@ -5,21 +5,17 @@
 /*
  * Addresses margins set differently in IE6/7
  */
-/* line 14, ../sass/normalize-rtl.scss */
 dd {
-  margin: 0 30px 0 0;
-}
+  margin: 0 30px 0 0; }
 
 /*
  * Addresses paddings set differently in IE6/7
  */
-/* line 25, ../sass/normalize-rtl.scss */
 menu,
 ol,
 ul,
 .item-list ul {
-  padding: 0 30px 0 0;
-}
+  padding: 0 30px 0 0; }
 
 /* =============================================================================
    Forms
@@ -30,7 +26,5 @@ ul,
 /* =============================================================================
    Tables
    ========================================================================== */
-/* line 48, ../sass/normalize-rtl.scss */
 th {
-  text-align: right;
-}
+  text-align: right; }

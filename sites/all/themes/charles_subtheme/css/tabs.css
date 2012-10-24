@@ -1,142 +1,63 @@
-/**
- * @file
- * Tabs Styling
- *
- * Adds styles for the primary and secondary tabs.
- *
- * Compare this with default CSS found in the system module's stylesheet (a copy
- * of which is in drupal7-reference.css.)
- */
 /*
- * Basic positioning styles shared by primary and secondary tabs.
- */
-/* line 24, ../sass/tabs.scss */
-ul.primary,
-ul.secondary {
-  overflow: hidden;
-  border-bottom: 1px solid #bbbbbb;
-  list-style: none;
-  margin: 1em 0 1.5em;
-  padding: 0 2px;
-  white-space: nowrap;
-}
-/* line 32, ../sass/tabs.scss */
-ul.primary li,
-ul.secondary li {
-  float: left;
-  /* LTR */
-  margin: 0.5em 3px 0;
-}
-/* line 37, ../sass/tabs.scss */
-ul.primary a,
-ul.secondary a {
-  border: 1px solid #e9e9e9;
-  border-right: 0;
-  border-bottom: 0;
-  display: block;
-  line-height: 1.5em;
-  text-decoration: none;
-}
+Syntax error: Undefined mixin 'clearfix'.
+        on line 25 of sass/tabs.scss, in `clearfix'
+        from line 25 of sass/tabs.scss
 
-/*
- * Primary tabs
- */
-/* line 52, ../sass/tabs.scss */
-ul.primary li {
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  text-shadow: 1px 1px 0 white;
-  border: 1px solid #bbbbbb;
-  border-bottom: 0;
-  margin: 0.5em 0 0 3px;
-  /* LTR */
-}
-/* line 59, ../sass/tabs.scss */
-ul.primary li.active {
-  border-bottom: 1px solid white;
-  margin-bottom: -1px;
-  /* Overlap the ul's border. */
-}
-/* line 65, ../sass/tabs.scss */
-ul.primary a:link,
-ul.primary a:visited {
-  -moz-border-radius-topleft: 4px;
-  -webkit-border-top-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -webkit-border-top-right-radius: 4px;
-  border-top-right-radius: 4px;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  color: #333;
-  background-color: #dedede;
-  letter-spacing: 1px;
-  padding: 0 1em;
-  text-align: center;
-}
-/* line 75, ../sass/tabs.scss */
-ul.primary a:hover,
-ul.primary a:focus {
-  background-color: #e9e9e9;
-  border-color: #f2f2f2;
-}
-/* line 79, ../sass/tabs.scss */
-ul.primary a.active {
-  background-color: transparent;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFE9E9E9', endColorstr='#00E9E9E9');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e9e9e9), color-stop(100%, rgba(233, 233, 233, 0)));
-  background-image: -webkit-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -moz-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: -o-linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  background-image: linear-gradient(#e9e9e9, rgba(233, 233, 233, 0));
-  border-color: #fff;
-}
+20:  * Basic positioning styles shared by primary and secondary tabs.
+21:  */
+22: 
+23: ul.primary,
+24: ul.secondary {
+25:   @include clearfix;
+26:   border-bottom: 1px solid $tabs-border;
+27:   list-style: none;
+28:   margin: 1em 0 1.5em;
+29:   padding: 0 2px;
+30:   white-space: nowrap;
 
-/*
- * Secondary tabs
- */
-/* line 91, ../sass/tabs.scss */
-ul.secondary {
-  font-size: .9em;
-  margin-top: -1.5em;
-  /* Collapse bottom margin of ul.primary. */
-  padding-bottom: .5em;
-}
-/* line 97, ../sass/tabs.scss */
-ul.secondary a:link,
-ul.secondary a:visited {
-  -webkit-border-radius: 0.75em;
-  -moz-border-radius: 0.75em;
-  -ms-border-radius: 0.75em;
-  -o-border-radius: 0.75em;
-  border-radius: 0.75em;
-  -webkit-transition: background-color 0.3s;
-  -moz-transition: background-color 0.3s;
-  -o-transition: background-color 0.3s;
-  transition: background-color 0.3s;
-  text-shadow: 1px 1px 0 white;
-  background-color: #f2f2f2;
-  color: #666;
-  padding: 0 .5em;
-}
-/* line 106, ../sass/tabs.scss */
-ul.secondary a:hover,
-ul.secondary a:focus {
-  background-color: #dedede;
-  border-color: #999;
-  color: #333;
-}
-/* line 112, ../sass/tabs.scss */
-ul.secondary a.active,
-ul.secondary a:active {
-  text-shadow: 1px 1px 0 #333333;
-  background-color: #666;
-  border-color: #000;
-  color: #fff;
-}
+Backtrace:
+sass/tabs.scss:25:in `clearfix'
+sass/tabs.scss:25
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:249:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 25 of sass/tabs.scss, in `clearfix'\A         from line 25 of sass/tabs.scss\A \A 20:  * Basic positioning styles shared by primary and secondary tabs.\A 21:  */\A 22: \A 23: ul.primary,\A 24: ul.secondary {\A 25:   @include clearfix;\A 26:   border-bottom: 1px solid $tabs-border;\A 27:   list-style: none;\A 28:   margin: 1em 0 1.5em;\A 29:   padding: 0 2px;\A 30:   white-space: nowrap;"; }

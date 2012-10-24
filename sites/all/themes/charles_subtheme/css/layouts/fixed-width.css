@@ -1,144 +1,63 @@
-/**
- * @file
- * Positioning for a fixed-width, desktop-centric layout.
- *
- * Define CSS classes to create a table-free, 3-column, 2-column, or single
- * column layout depending on whether blocks are enabled in the left or right
- * columns.
- *
- * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
- */
 /*
- * Center the page.
- */
-/* line 43, ../../sass/layouts/fixed-width.scss */
-#page,
-.region-bottom {
-  /* If you want to make the page a fixed width and centered in the viewport,
-   * this is the standards-compliant way to do that. */
-  margin-left: auto;
-  margin-right: auto;
-  width: 980px;
-}
+Syntax error: Undefined mixin 'zen-grid-item-base'.
+        on line 62 of sass/layouts/fixed-width.scss, in `zen-grid-item-base'
+        from line 62 of sass/layouts/fixed-width.scss
 
-/*
- * Apply the shared properties of grid items in a single, efficient ruleset.
- */
-/* line 61, ../../sass/layouts/fixed-width.scss */
-#header,
-#content,
-#navigation,
-.region-sidebar-first,
-.region-sidebar-second,
-#footer {
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 0 !important;
-  word-wrap: break-word;
-}
+57: #content,
+58: #navigation,
+59: .region-sidebar-first,
+60: .region-sidebar-second,
+61: #footer {
+62:   @include zen-grid-item-base();
+63: }
+64: 
+65: /*
+66:  * Containers for grid items and flow items.
+67:  */
 
-/*
- * Containers for grid items and flow items.
- */
-/* line 52, /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-#header:before, #header:after,
-#main:before,
-#main:after,
-#footer:before,
-#footer:after {
-  content: "";
-  display: table;
-}
-/* line 56, /home/charles/Scss_Testing/pantheonProject/cleverington/sites/all/themes/zen/cleverington_theme/sass-extensions/zen-grids/stylesheets/zen/_grids.scss */
-#header:after,
-#main:after,
-#footer:after {
-  clear: both;
-}
-
-/*
- * Navigation bar
- */
-/* line 79, ../../sass/layouts/fixed-width.scss */
-#main {
-  padding-top: 3em;
-  /* Move all the children of #main down to make room. */
-  position: relative;
-}
-
-/* line 83, ../../sass/layouts/fixed-width.scss */
-#navigation {
-  position: absolute;
-  top: 0;
-  /* Move the navbar up inside #main's padding. */
-  height: 3em;
-  width: 960px;
-}
-
-/*
- * The layout when there is only one sidebar, the left one.
- */
-/* line 95, ../../sass/layouts/fixed-width.scss */
-.sidebar-first #content {
-  /* Span 4 columns, starting in 2nd column from left. */
-  float: left;
-  width: 764px;
-  margin-left: 196px;
-  margin-right: -980px;
-}
-/* line 99, ../../sass/layouts/fixed-width.scss */
-.sidebar-first .region-sidebar-first {
-  /* Span 1 column, starting in 1st column from left. */
-  float: left;
-  width: 176px;
-  margin-left: 0px;
-  margin-right: -196px;
-}
-
-/*
- * The layout when there is only one sidebar, the right one.
- */
-/* line 109, ../../sass/layouts/fixed-width.scss */
-.sidebar-second #content {
-  /* Span 4 columns, starting in 1st column from left. */
-  float: left;
-  width: 764px;
-  margin-left: 0px;
-  margin-right: -784px;
-}
-/* line 113, ../../sass/layouts/fixed-width.scss */
-.sidebar-second .region-sidebar-second {
-  /* Span 1 column, starting in 5th column from left. */
-  float: left;
-  width: 176px;
-  margin-left: 784px;
-  margin-right: -980px;
-}
-
-/*
- * The layout when there are two sidebars.
- */
-/* line 123, ../../sass/layouts/fixed-width.scss */
-.two-sidebars #content {
-  /* Span 3 columns, starting in 2nd column from left. */
-  float: left;
-  width: 568px;
-  margin-left: 196px;
-  margin-right: -784px;
-}
-/* line 127, ../../sass/layouts/fixed-width.scss */
-.two-sidebars .region-sidebar-first {
-  /* Span 1 column, starting in 1st column from left. */
-  float: left;
-  width: 176px;
-  margin-left: 0px;
-  margin-right: -196px;
-}
-/* line 131, ../../sass/layouts/fixed-width.scss */
-.two-sidebars .region-sidebar-second {
-  /* Span 1 column, starting in 5th column from left. */
-  float: left;
-  width: 176px;
-  margin-left: 784px;
-  margin-right: -980px;
-}
+Backtrace:
+sass/layouts/fixed-width.scss:62:in `zen-grid-item-base'
+sass/layouts/fixed-width.scss:62
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:249:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:316:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/base.rb:37:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:315:in `_render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/engine.rb:262:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:340:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:202:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:200:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/lib/sass/plugin/compiler.rb:298:in `block in watch'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/var/lib/gems/1.9.1/gems/sass-3.2.1/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'zen-grid-item-base'.\A         on line 62 of sass/layouts/fixed-width.scss, in `zen-grid-item-base'\A         from line 62 of sass/layouts/fixed-width.scss\A \A 57: #content,\A 58: #navigation,\A 59: .region-sidebar-first,\A 60: .region-sidebar-second,\A 61: #footer {\A 62:   @include zen-grid-item-base();\A 63: }\A 64: \A 65: /*\A 66:  * Containers for grid items and flow items.\A 67:  */"; }

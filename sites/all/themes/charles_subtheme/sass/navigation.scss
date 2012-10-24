@@ -36,9 +36,6 @@ ul li.leaf {
  * The active item in a Drupal menu
  */
 
-li a.active {
-  color: #000;
-}
 
 /*
  * Navigation bar
@@ -61,15 +58,24 @@ li a.active {
     margin: 0;
     padding: 0;
     text-align: left; /* LTR */
-
-    li { /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
+    }
+  li { /* A simple method to get navigation links to appear in one line. */
+      float: right; /* LTR */
       padding: 0 10px 0 0; /* LTR */
       list-style-type: none;
-      list-style-image: none;
+      list-style-image: none;      
+    a {
+        position: fixed;
+      right: 3%;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border: 3px solid red;
+      border-radius: 3px;
+      box-shadow: 2px 3px 3px #383838;
     }
   }
 }
+
 
 .region-navigation {
 }

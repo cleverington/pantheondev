@@ -46,6 +46,7 @@ li a.active {
 
 #navigation {
   /* overflow: hidden; */ /* Sometimes you want to prevent overlapping with main div. */
+  $color: #4d4d4d;
 
   .block {
     margin-bottom: 0;
@@ -55,19 +56,46 @@ li a.active {
   .block-menu-block .block-title {
     @include element-invisible();
   }
+  #main-menu {
+    width: percentage(.07);
+    float: right;
+    opacity: percentage(.30);
+    position: fixed;
+    right: 1px;
+    top: percentage(.15);
+    display: inline;
+  }
 
   ul.links, /* Main menu and secondary menu links */
   ul.menu { /* Menu block links */
-    margin: 0;
-    padding: 0;
-    text-align: left; /* LTR */
+    margin: 2px;
+    padding: 1px;
+    text-align: center; /* LTR */
+    float: left;
+    display: inline;
 
-    li { /* A simple method to get navigation links to appear in one line. */
-      float: left; /* LTR */
-      padding: 0 10px 0 0; /* LTR */
+  li { /* A simple method to get navigation links to appear in one line. */
+      width: percentage(1.2);
+      padding: percentage(.1);
       list-style-type: none;
       list-style-image: none;
-    }
+      border: percentage(.1)px solid red;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;      
+      border-radius: 5px;
+      box-shadow: 1px 2px 2px black;
+      background-color: $color;
+      margin: percentage(.1);
+      text-align: left;
+      float: left;
+      display: inline;
+      a {
+        text-align: left;
+        font-size: .7em;
+        float: none;
+        color: invert($color);
+      }
+    }  
   }
 }
 

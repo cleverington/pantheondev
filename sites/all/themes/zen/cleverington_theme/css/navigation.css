@@ -40,11 +40,11 @@ li a.active {
   /* overflow: hidden; */
   /* Sometimes you want to prevent overlapping with main div. */
 }
-/* line 50, ../sass/navigation.scss */
+/* line 51, ../sass/navigation.scss */
 #navigation .block {
   margin-bottom: 0;
 }
-/* line 55, ../sass/navigation.scss */
+/* line 56, ../sass/navigation.scss */
 #navigation .block-menu .block-title,
 #navigation .block-menu-block .block-title {
   position: absolute !important;
@@ -53,31 +53,59 @@ li a.active {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 60, ../sass/navigation.scss */
+/* line 59, ../sass/navigation.scss */
+#navigation #main-menu {
+  width: 7.0%;
+  float: right;
+  opacity: 30%;
+  position: fixed;
+  right: 1px;
+  top: 15%;
+  display: inline;
+}
+/* line 70, ../sass/navigation.scss */
 #navigation ul.links,
 #navigation ul.menu {
   /* Menu block links */
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  margin: 2px;
+  padding: 1px;
+  text-align: center;
   /* LTR */
+  float: left;
+  display: inline;
 }
-/* line 65, ../sass/navigation.scss */
+/* line 77, ../sass/navigation.scss */
 #navigation ul.links li,
 #navigation ul.menu li {
   /* A simple method to get navigation links to appear in one line. */
-  float: left;
-  /* LTR */
-  padding: 0 10px 0 0;
-  /* LTR */
+  width: 120%;
+  padding: 10%;
   list-style-type: none;
   list-style-image: none;
+  border: 10% px solid red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px black;
+  background-color: #4d4d4d;
+  margin: 10%;
+  text-align: left;
+  float: left;
+  display: inline;
+}
+/* line 92, ../sass/navigation.scss */
+#navigation ul.links li a,
+#navigation ul.menu li a {
+  text-align: left;
+  font-size: .7em;
+  float: none;
+  color: #b2b2b2;
 }
 
 /*
  * Main menu and Secondary menu links
  */
-/* line 84, ../sass/navigation.scss */
+/* line 112, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
