@@ -14,6 +14,13 @@
     /* background-color: #ffffea; */ /* Drupal core uses a #ffffea background */
   }
 
+  .node-title, .node li { 
+    a {
+      color: darken($global-text-color, 40%);
+      text-decoration: none;
+    }
+  }
+
   .node-title { /* Node title */
   }
 

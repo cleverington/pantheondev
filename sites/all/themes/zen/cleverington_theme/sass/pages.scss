@@ -17,9 +17,23 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: $global_background;
+  color: $global-text-color;
+  font: $global-font;
+  a {
+    color: darken($global-text-color, 40%);
+  }
 }
 
 #page {
+  /*
+  *  Normal Padding: 960 * 5%
+  *  
+  */
+  padding-right: 5%; 
+  padding-left: 5%;
+  height: auto !important;
 }
 
 /*
@@ -36,8 +50,8 @@ body {
     width: 100%;
     padding: 2px 0 3px 0;
     text-align: center;
-    background-color: #666;
-    color: #fff;
+    background-color: global_background;
+    color: $global-text-color;
   }
 }
 
@@ -49,6 +63,7 @@ body {
 }
 
 #logo { /* Wrapping link for logo */
+  display: none;
   float: left; /* LTR */
   margin: 0;
   padding: 0;
@@ -60,28 +75,33 @@ body {
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
+
 }
 
 #site-name { /* The name of the website */
+  color: darken($global-text-color, 5%);
   margin: 0;
-  font-size: 2em;
+  font-size: 3em;
   line-height: 1.5em;
+  @include text-shadows(.5px);
 
   a:link,
   a:visited {
-    color: #000;
+    color: darken($global-text-color, 10%);
     text-decoration: none;
   }
 
   a:hover,
   a:focus {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
+  font-style: italic;
+  color: darken($global-text-color, 2.5%);
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -93,6 +113,8 @@ body {
  */
 
 #main {
+  overflow: auto;
+  padding-bottom: 150px;
 }
 
 /*
@@ -100,6 +122,9 @@ body {
  */
 
 #content {
+  h2.node-title {
+    color: darken($global-text-color, 2.5%);
+  }
 }
 
 .region-highlighted {
@@ -125,7 +150,10 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
+  @include text-shadows(.5px);
+  color: darken($global-a-color, 2%);
 }
+
 
 tr.even { /* Some tables have rows marked even or odd. */
   /* background-color: #eee; */ /* Drupal core uses a #eee background */
@@ -229,6 +257,8 @@ span.field-label { /* The inline field label used by the Fences module */
  */
 
 #footer {
+
+
 }
 
 /*

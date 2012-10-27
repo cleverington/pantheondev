@@ -2,6 +2,8 @@
  * @file
  * Views Styling
  */
+/* Hex: #052A6E; */
+/* Hex: #6B90D4 */
 /*
  * Views' admin tabs
  *
@@ -31,7 +33,7 @@
 }
 /* line 31, ../sass/views-styles.scss */
 .views-displays .secondary .open > a:hover {
-  color: #333;
+  color: #b3b3b3;
 }
 /* line 36, ../sass/views-styles.scss */
 .views-displays .secondary .action-list li {
