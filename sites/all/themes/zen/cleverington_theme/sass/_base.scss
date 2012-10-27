@@ -129,7 +129,19 @@ $global-a-color: lighten(rgba(107, 144, 212, 1), 20%); /* Hex: #6B90D4 */;
 @import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
 @import "compass/utilities/sprites"; // See http://compass-style.org/help/tutorials/spriting/
 @import "compass/css3";     // Use one CSS3 mixin instead of multiple vendor prefixes.
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
 @import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
 @import "zen";              // Add the Zen Grids responsive layout mixins.
 
 @import "custom";           // Import our custom mixins last.
+
+
+//
+//  Defaulting the Box-Shadow
+//     box-shadow: 2px 3px 3px lighten($global_background, 10%);
+
+$default-box-shadow-color: lighten($global_background, 10%);
+$default-box-shadow-h-offset: 2px;
+$default-box-shadow-v-offset: 2px;
+$default-box-shadow-blur: 5px;

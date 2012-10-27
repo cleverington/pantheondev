@@ -59,38 +59,49 @@ li a.active {
     opacity: 30%;    
     line-height: 1.5em;
     height:99%;
-    margin-bottom: 1%;    
+    margin-bottom: 1%; 
+    margin-left: auto;
+    margin-right: auto;   
     
   }
 
   li { /* A simple method to get navigation links to appear in one line. */
       width: 96%;
-
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: auto;
+      padding-right: auto;
       display: inline;        
       list-style-image: none;      
       text-align: center;
       float: none;
-      line-height: 2.0em;
-            
-      -webkit-transition: height 0.2s linear, background 0.3s ease-in-out;
-      -moz-transition: height 0.2s linear, background 0.3s ease-in-out;
-      -o-transition:  height 0.2s linear, background 0.3s ease-in-out;
-      transition: height 0.2s linear, background 0.3s ease-in-out; 
-      :hover {
-        height: -10%;                  
-      }
+      line-height: 1.5em;      
+    
+       
+
       
+        border: 3px solid lighten($global_background, 10%);
+        background-color: lighten($global_background, 10%);
+
+        @include border-radius(30px);
+        @include box-shadow;
+
       a {
         text-decoration: none;
         text-align: center;
-        padding-left: 2%;
-        padding-right: 2%;
+        padding-left: auto;
+        padding-right: auto;
         height: 200%;
-        font-size: 2.0em;
+        font-size: ($global-font*2);
         float: none;
 
         color: darken($global-a-color, 2%);
         @include text-shadows(.5px);
+        @include transition(height 0.2s linear, background 0.3s ease-in-out);
+        
+        :hover {
+          @include transform2d(scale(2.0));
+        }
       }
     }
   ul.links, /* Main menu and secondary menu links */
