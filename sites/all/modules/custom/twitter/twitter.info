@@ -1,0 +1,12 @@
+name = Twitter Recent Activity
+description = Retrieves and displays in a block the recent activity data from Twitter.
+package = 
+core = 7.x
+files[] = twitter.module
+
+;
+;  Custom Twitter Plugin Module based on net tuts+ FaceBook tutorial:
+;
+;    http://net.tutsplus.com/tutorials/create-a-facebook-recent-activity-drupal-module/
+;
+;

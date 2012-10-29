@@ -69,3 +69,18 @@
     @include unpublished-div;
   }
 }
+
+
+/*
+* CSS for Google-Prettify Code Snippets
+*
+*/
+
+.node code {
+  line-height: .4em;
+  font-size: .9em;
+  font-family: $helvetica;    
+  margin-left: auto;
+  margin-right: auto;
+  
+}
