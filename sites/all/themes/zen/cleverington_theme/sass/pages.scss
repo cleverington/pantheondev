@@ -18,11 +18,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: $global_background;
-  color: $global-text-color;
+  background-color: darken($global_background, 10%);
+  color: darken($global-text-color, 10%);
   font: $global-font;
   a {
-    color: darken($global-text-color, 40%);
+    color: darken($global-text-color, 20%);
   }
 }
 
@@ -31,6 +31,7 @@ body {
   *  Normal Padding: 960 * 5%
   *  
   */
+  background-color: darken($global_background, 15%);
   padding-right: 5%; 
   padding-left: 5%;
   height: auto !important;
@@ -51,7 +52,7 @@ body {
     padding: 2px 0 3px 0;
     text-align: center;
     background-color: global_background;
-    color: $global-text-color;
+    color: darken($global-text-color, 10%);
   }
 }
 
@@ -79,7 +80,7 @@ body {
 }
 
 #site-name { /* The name of the website */
-  color: darken($global-text-color, 5%);
+  color: darken($global-text-color, 10%);
   margin: 0;
   font-size: 3em;
   line-height: 1.5em;
@@ -87,7 +88,7 @@ body {
 
   a:link,
   a:visited {
-    color: darken($global-text-color, 10%);
+    color: darken($global-text-color, 15%);
     text-decoration: none;
   }
 
@@ -101,7 +102,7 @@ body {
   margin: 0;
   font-size: 1em;
   font-style: italic;
-  color: darken($global-text-color, 2.5%);
+  color: darken($global-text-color, 10%);
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -150,8 +151,8 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
-  @include text-shadows(.5px);
-  color: darken($global-a-color, 2%);
+  @include text-shadows(.75px);
+  color: darken($global-a-color, 5%);
 }
 
 

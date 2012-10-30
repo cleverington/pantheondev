@@ -59,6 +59,12 @@ $zen-auto-include-item-base: false;
 #navigation,
 .region-sidebar-first,
 .region-sidebar-second,
+.region-postscript-first,
+.region-postscript-second,
+.region-postscript-third,
+.region-postscript-fourth,
+.region-footer-first,
+.region-footer-second,
 #footer {
   @include zen-grid-item-base();
 }

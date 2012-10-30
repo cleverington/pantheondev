@@ -53,6 +53,58 @@
 }
 
 .field-type-taxonomy-term-reference {
+    $node-margin: 8px;
+  	$node-padding: 2px;
+  	$node-radius: 10px;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    color: darken($global-text-color, 5%);
+    background-color: darken($global_background, 25%);
+  	float: left;
+  	@include single-box-shadow;
+  	font-size: ($base-font-size * .6);
+  	@include border-radius($node-radius);
+  
+    @media all and (min-width: 960px) {
+    	margin-top: $node-margin;
+    	margin-bottom: $node-margin;
+    	margin-left: $node-margin;
+    	padding: $node-padding;
+    	text-align: center;        	
+    	width: 70%;
+    	
+    	.field-items a {
+      		text-align: center;
+      		text-decoration: underline;
+      		line-height: ($base-line-height*1.25);
+      		margin: $node-margin;
+      		padding-left: 2%;
+      		padding-right: 2%;
+    	}
+    }
+
+  	@media all and (min-width: 800px) {
+    	margin-top: ($node-margin/1.2);
+    	margin-bottom: ($node-margin/1.2);
+    	margin-left: ($node-margin/1.2)px;
+    	margin-right: ($node-margin/1.2)px;
+    	padding: ($node-padding/1.2);   	
+
+    	.field-items a {
+      	text-decoration: underline;
+      	padding: $node-padding;
+      	margin-left: auto;
+      	margin-right: auto;
+    	}
+    }
+
+    .field-items a {
+    	float: left;  	
+    }
+     
 }
 
 .field-type-number-integer {

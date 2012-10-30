@@ -37,10 +37,71 @@
 /*
  * Field types (Core)
  */
+/* line 55, ../sass/fields.scss */
+.field-type-taxonomy-term-reference {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  color: #f2f2f2;
+  background-color: rgba(24, 45, 84, 0.7);
+  float: left;
+  -webkit-box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
+  -moz-box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
+  box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
+  font-size: 9.6px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+@media all and (min-width: 960px) {
+  /* line 55, ../sass/fields.scss */
+  .field-type-taxonomy-term-reference {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    padding: 2px;
+    text-align: center;
+    width: 70%;
+  }
+  /* line 79, ../sass/fields.scss */
+  .field-type-taxonomy-term-reference .field-items a {
+    text-align: center;
+    text-decoration: underline;
+    line-height: 30px;
+    margin: 8px;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+@media all and (min-width: 800px) {
+  /* line 55, ../sass/fields.scss */
+  .field-type-taxonomy-term-reference {
+    margin-top: 6.66667px;
+    margin-bottom: 6.66667px;
+    margin-left: 6.66667px px;
+    margin-right: 6.66667px px;
+    padding: 1.66667px;
+  }
+  /* line 96, ../sass/fields.scss */
+  .field-type-taxonomy-term-reference .field-items a {
+    text-decoration: underline;
+    padding: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* line 104, ../sass/fields.scss */
+.field-type-taxonomy-term-reference .field-items a {
+  float: left;
+}
+
 /*
  * Field types (Contrib)
  */
-/* line 83, ../sass/fields.scss */
+/* line 135, ../sass/fields.scss */
 .field-type-datetime {
   /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */
 }
@@ -48,7 +109,7 @@
 /*
  * Named fields
  */
-/* line 105, ../sass/fields.scss */
+/* line 157, ../sass/fields.scss */
 .field-name-field-FIELDNAME {
   /* Underscores in field name are replaced with dashes. */
 }

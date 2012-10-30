@@ -76,16 +76,16 @@ li a.active {
   text-align: center;
   float: none;
   line-height: 1.5em;
-  border: 3px solid #073d9f;
-  background-color: #073d9f;
+  border: 3px solid rgba(81, 124, 205, 0.7);
+  background-color: rgba(81, 124, 205, 0.7);
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 5px #073d9f;
-  -moz-box-shadow: 2px 2px 5px #073d9f;
-  box-shadow: 2px 2px 5px #073d9f;
+  -webkit-box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
+  -moz-box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
+  box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
 }
 /* line 89, ../sass/navigation.scss */
 #navigation li a {
@@ -97,7 +97,7 @@ li a.active {
   font-size: 32px;
   float: none;
   color: #b2c5e9;
-  text-shadow: 0.5px 0.5px 0.5px white, 1.5px 1.5px 1.5px white, 2.5px 2.5px 0 #01050c, 3.5px 3.5px 0 #01050c, 4.5px 4.5px 0 #01050c, 5.5px 5.5px 0 #01050c, 6.5px 6.5px 0 #01050c;
+  text-shadow: 0.5px 0.5px 0.5px white, 1.5px 1.5px 1.5px white, 2.5px 2.5px 0 rgba(29, 55, 104, 0.7), 3.5px 3.5px 0 rgba(29, 55, 104, 0.7), 4.5px 4.5px 0 rgba(29, 55, 104, 0.7), 5.5px 5.5px 0 rgba(29, 55, 104, 0.7), 6.5px 6.5px 0 rgba(29, 55, 104, 0.7);
   -webkit-transition: height 0.2s linear, background 0.3s ease-in-out;
   -moz-transition: height 0.2s linear, background 0.3s ease-in-out;
   -o-transition: height 0.2s linear, background 0.3s ease-in-out;
@@ -139,7 +139,7 @@ li a.active {
   text-align: center;
   /* LTR */
   list-style: none outside none;
-  border: 0px transparent #063386;
+  border: 0px transparent rgba(61, 110, 200, 0.7);
 }
 
 /*
