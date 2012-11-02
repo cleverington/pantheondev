@@ -12,6 +12,12 @@
  */
 /* Hex: #052A6E; */
 /* Hex: #6B90D4 */
+/* line 166, ../sass/_base.scss */
+.field-type-taxonomy-term-reference {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /*
  * Field wrappers when the Fences module is enabled.
  */
@@ -40,8 +46,8 @@
 /* line 55, ../sass/fields.scss */
 .field-type-taxonomy-term-reference {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 25%;
+  width: 50%;
   clear: both;
   color: #f2f2f2;
   background-color: rgba(24, 45, 84, 0.7);
@@ -66,7 +72,7 @@
     text-align: center;
     width: 70%;
   }
-  /* line 79, ../sass/fields.scss */
+  /* line 80, ../sass/fields.scss */
   .field-type-taxonomy-term-reference .field-items a {
     text-align: center;
     text-decoration: underline;
@@ -85,7 +91,7 @@
     margin-right: 6.66667px px;
     padding: 1.66667px;
   }
-  /* line 96, ../sass/fields.scss */
+  /* line 97, ../sass/fields.scss */
   .field-type-taxonomy-term-reference .field-items a {
     text-decoration: underline;
     padding: 2px;
@@ -93,7 +99,7 @@
     margin-right: auto;
   }
 }
-/* line 104, ../sass/fields.scss */
+/* line 105, ../sass/fields.scss */
 .field-type-taxonomy-term-reference .field-items a {
   float: left;
 }
@@ -101,7 +107,7 @@
 /*
  * Field types (Contrib)
  */
-/* line 135, ../sass/fields.scss */
+/* line 136, ../sass/fields.scss */
 .field-type-datetime {
   /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */
 }
@@ -109,7 +115,7 @@
 /*
  * Named fields
  */
-/* line 157, ../sass/fields.scss */
+/* line 158, ../sass/fields.scss */
 .field-name-field-FIELDNAME {
   /* Underscores in field name are replaced with dashes. */
 }

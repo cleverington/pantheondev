@@ -69,39 +69,36 @@ li a.active {
       width: 96%;
       margin-left: auto;
       margin-right: auto;
-      padding-left: auto;
+      padding-left: 2%;
       padding-right: auto;
       display: inline;        
       list-style-image: none;      
       text-align: center;
       float: none;
-      line-height: 1.5em;      
+      line-height: 1.5em;
+      border: 3px solid lighten($global_background, 10%);
+      background-color: lighten($global_background, 10%);
+
+      @include border-radius(30px);
+      @include box-shadow;
     
-       
-
+      @include transition( all 0.3s ease-in-out);
+      &:hover {
+        @include scale(1.05);
+        background-color: lighten($global_background, 5%);
+        border: 3px solid lighten($global_background, 5%);
+      }        
       
-        border: 3px solid lighten($global_background, 10%);
-        background-color: lighten($global_background, 10%);
-
-        @include border-radius(30px);
-        @include box-shadow;
-
       a {
         text-decoration: none;
         text-align: center;
         padding-left: auto;
         padding-right: auto;
         height: 200%;
-        font-size: ($global-font*2);
+        font-size: ($global-font*2.0);
         float: none;
 
         color: darken($global-a-color, 2%);
-        @include text-shadows(.5px);
-        @include transition(height 0.2s linear, background 0.3s ease-in-out);
-        
-        :hover {
-          @include transform2d(scale(2.0));
-        }
       }
     }
   ul.links, /* Main menu and secondary menu links */

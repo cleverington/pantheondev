@@ -69,7 +69,7 @@ li a.active {
   width: 96%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: auto;
+  padding-left: 2%;
   padding-right: auto;
   display: inline;
   list-style-image: none;
@@ -86,8 +86,22 @@ li a.active {
   -webkit-box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
   -moz-box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
   box-shadow: 2px 2px 5px rgba(81, 124, 205, 0.7);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-/* line 89, ../sass/navigation.scss */
+/* line 86, ../sass/navigation.scss */
+#navigation li:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  background-color: rgba(61, 110, 200, 0.7);
+  border: 3px solid rgba(61, 110, 200, 0.7);
+}
+/* line 92, ../sass/navigation.scss */
 #navigation li a {
   text-decoration: none;
   text-align: center;
@@ -97,40 +111,8 @@ li a.active {
   font-size: 32px;
   float: none;
   color: #b2c5e9;
-  text-shadow: 0.5px 0.5px 0.5px white, 1.5px 1.5px 1.5px white, 2.5px 2.5px 0 rgba(29, 55, 104, 0.7), 3.5px 3.5px 0 rgba(29, 55, 104, 0.7), 4.5px 4.5px 0 rgba(29, 55, 104, 0.7), 5.5px 5.5px 0 rgba(29, 55, 104, 0.7), 6.5px 6.5px 0 rgba(29, 55, 104, 0.7);
-  -webkit-transition: height 0.2s linear, background 0.3s ease-in-out;
-  -moz-transition: height 0.2s linear, background 0.3s ease-in-out;
-  -o-transition: height 0.2s linear, background 0.3s ease-in-out;
-  transition: height 0.2s linear, background 0.3s ease-in-out;
 }
-/* line 110, ../sass/_base.scss */
-#navigation li a :hover {
-  /* CSS3 Transform Effect */
-  -webkit-transform: scale(120%);
-  /* Safari & Chrome */
-  -moz-transform: scale(120%);
-  /* Firefox */
-  -o-transform: scale(120%);
-  /* Opera */
-  transform: scale(120%);
-  /* CSS3 Transition Effect */
-  -webkit-transition: all 0.12s ease-out;
-  /* Safari & Chrome */
-  -moz-transition: all 0.12s ease-out;
-  /* Firefox */
-  -o-transition: all 0.12s ease-out;
-  /* Opera */
-  transition: all 0.12s ease-out;
-}
-/* line 102, ../sass/navigation.scss */
-#navigation li a :hover {
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -ms-transform: scale(2);
-  -o-transform: scale(2);
-  transform: scale(2);
-}
-/* line 108, ../sass/navigation.scss */
+/* line 105, ../sass/navigation.scss */
 #navigation ul.links,
 #navigation ul.menu {
   /* Menu block links */
@@ -145,7 +127,7 @@ li a.active {
 /*
  * Main menu and Secondary menu links
  */
-/* line 128, ../sass/navigation.scss */
+/* line 125, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */

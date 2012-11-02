@@ -58,8 +58,9 @@
   	$node-radius: 10px;
 
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-left: 25%;
+    width: 50%;
+    @extend %padds;
     clear: both;
     color: darken($global-text-color, 5%);
     background-color: darken($global_background, 25%);

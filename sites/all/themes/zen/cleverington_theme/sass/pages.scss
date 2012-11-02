@@ -76,6 +76,7 @@ body {
 
 #name-and-slogan { /* Wrapper for website name and slogan */
   float: left;
+  //  @extend %mediaqs !optional;  /* Fix the _base extend later. */
 
 }
 
@@ -123,6 +124,10 @@ body {
  */
 
 #content {
+  .column {
+    @extend %padds;
+  }
+
   h2.node-title {
     color: darken($global-text-color, 2.5%);
   }
