@@ -58,9 +58,9 @@
   	$node-radius: 10px;
 
     list-style-type: none;
-    margin-left: 25%;
-    width: 50%;
-    @extend %padds;
+    margin-left:  5%;  // 100% -  5%
+    width: 50%;         // 100% - 50%
+    @extend %padds;    // 100% - 10% - 10%;
     clear: both;
     color: darken($global-text-color, 5%);
     background-color: darken($global_background, 25%);
@@ -71,11 +71,9 @@
   
     @media all and (min-width: 960px) {
     	margin-top: $node-margin;
-    	margin-bottom: $node-margin;
-    	margin-left: $node-margin;
-    	padding: $node-padding;
+    	margin-bottom: $node-margin;    	    	
     	text-align: center;        	
-    	width: 70%;
+    	width: 50%;
     	
     	.field-items a {
       		text-align: center;
@@ -89,15 +87,10 @@
 
   	@media all and (min-width: 800px) {
     	margin-top: ($node-margin/1.2);
-    	margin-bottom: ($node-margin/1.2);
-    	margin-left: ($node-margin/1.2)px;
-    	margin-right: ($node-margin/1.2)px;
-    	padding: ($node-padding/1.2);   	
+    	margin-bottom: ($node-margin/1.2);  	 	
 
     	.field-items a {
-      	text-decoration: underline;
-      	padding: $node-padding;
-      	margin-left: auto;
+      	text-decoration: underline;      	
       	margin-right: auto;
     	}
     }

@@ -113,47 +113,40 @@
   clear: both;
 }
 .node ul.links.inline {
+  @extend %padds;
   $node-margin: 8px;
+  width: 50%;
+  margin-left: 5%;  
   $node-padding: 2px;
-  $node-radius: 25px;
+  $node-radius: 30px;
   background-color: darken($global_background, 25%);
   float: left;
   @include single-box-shadow;
   font-size: ($base-font-size * .8);
+  @include border-radius($node-radius);
   
   @media all and (min-width: 960px) {
     margin-top: $node-margin;
-    margin-bottom: $node-margin;
-    margin-left: $node-margin;
-    padding: $node-padding;
+    margin-bottom: $node-margin;        
     text-align: center;    
-    @include border-radius($node-radius);
-    width: 70%;
+    @include border-radius($node-radius);    
     a {
       text-decoration: none;
-      line-height: ($base-line-height*1.25);
-      margin: $node-margin;
+      line-height: ($base-line-height*1.25);      
       padding-left: $node-padding;
       padding-right: $node-padding;      
       border: 1px transparent;
       background-color: $global_background;
-      @include border-radius($node-radius);
-      @include single-box-shadow;
+      @include border-radius($node-radius);         
     }
   }
 
   @media all and (min-width: 800px) {
     margin-top: ($node-margin/1.2);
     margin-bottom: ($node-margin/1.2);
-    margin-left: ($node-margin/1.2)px;
-    margin-right: ($node-margin/1.2)px;
-    padding: ($node-padding/1.2);
-    @include border-radius(($node-radius/1.2));
-
+       
     a {
-      text-decoration: none;
-      padding: $node-padding;
-      margin-left: auto;
+      text-decoration: none;   
       margin-right: auto;
     }
   }
