@@ -35,6 +35,10 @@ body {
   padding-right: 5%; 
   padding-left: 5%;
   height: auto !important;
+  overflow: hidden;
+  @include border-radius(30px);
+  @include box-shadow;
+  margin: 10px;
 }
 
 /*

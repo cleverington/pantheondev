@@ -113,6 +113,8 @@ $global-a-color: lighten(rgba(107, 144, 212, 1), 20%); /* Hex: #6B90D4 */;
     		/* CSS3 Transform Effect */
   	@include scale( 1.05 );
     padding-left: 1%;
+    width: 90%;
+    margin-left: 1%;
     }          
 }
 
