@@ -121,6 +121,26 @@ function STARTERKIT_preprocess_maintenance_page(&$variables, $hook) {
 // */
 
 /**
+ * Override or insert variables into the maintenance page template.
+ *
+ * @param $variables
+ *   An array of variables to pass to the theme template.
+ * @param $hook
+ *   The name of the template being rendered ("maintenance_page" in this case.)
+ */
+function cleverington_theme_process_maintenance_page(&$variables, $hook) {
+  zen_process_html($variables, $hook);
+  // Ensure default regions get a variable. Theme authors often forget to remove
+  // a deleted region's variable in maintenance-page.tpl.
+  foreach (array('header', 'navigation', 'highlighted', 'help', 'content', 'sidebar_first', 'sidebar_second', 'postscript_first', 'postscript_second', 'postscript_third', 'postscript_fourth', 'footer_first', 'footer_second', 'bottom') as $region) {
+    if (!isset($variables[$region])) {
+      $variables[$region] = '';
+    }
+  }
+}
+
+
+/**
  * Override or insert variables into the html templates.
  *
  * @param $variables
@@ -224,3 +244,5 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+

@@ -70,7 +70,7 @@
  */
 ?>
 
-<div id="page">
+<div id="page-wrapper"><div id="page">
 
   <header id="header" role="banner">
 
@@ -164,25 +164,72 @@
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);
       $sidebar_second = render($page['sidebar_second']);
+
     ?>
 
+    <!-- Zen Change:  Only render sidebars loaded. -->
     <?php if ($sidebar_first || $sidebar_second): ?>
       <aside class="sidebars">
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
+        
+        <?php if ($sidebar_first && $sidebar_second):  ?>
+          <?php print $sidebar_first; ?>
+          <?php print $sidebar_second; ?>
+        <?php endif; ?>
+
+        <?php if ($sidebar_first && !$sidebar_second): ?>
+          <?php print $sidebar_first; ?>
+        <?php endif; ?>
+
+        <?php if (!$sidebar_first && $sidebar_second): ?>
+          <?php print $sidebar_second; ?>
+        <?php endif; ?>
+
       </aside><!-- /.sidebars -->
     <?php endif; ?>
 
-    <?php print render($page['postscript_first']); ?>
-    <?php print render($page['postscript_second']); ?>
-    <?php print render($page['postscript_third']); ?>
-    <?php print render($page['postscript_fourth']); ?>
-
   </div><!-- /#main -->
 
-  <?php print render($page['footer_first']); ?>
-  <?php print render($page['footer_second']); ?>
+  <footer>
+    <header>
 
-</div><!-- /#page -->
+    <div id="postscript">
+
+      <!-- Zen Change: Add Omega Theme's four postscript boxes -->
+      <?php $postscript_first = render($page['postscript_first']); ?>
+      <?php $postscript_second = render($page['postscript_second']); ?>
+      <?php $postscript_third = render($page['postscript_third']); ?>
+      <?php $postscript_fourth = render($page['postscript_fourth']); ?>
+
+
+      <?php if ($postscript_first || $postscript_second || $postscript_third || $postscript_fourth): ?>
+        <aside class="postscript-regions">
+         <?php print $postscript_first; ?>
+          <?php print $postscript_second; ?>
+         <?php print $postscript_third; ?>
+          <?php print $postscript_fourth; ?>
+       </aside><!-- /.postscript-regions -->
+      <?php endif; ?>
+    </div>
+
+    </header>
+
+    <div class="footer-wrapper">
+      <!-- Zen Change:  Add second Footer, creating two equal-width footer boxes --> 
+      <?php
+        // Render the sidebars to see if there's anything in them.
+        $footer_first = render($page['footer_first']);
+        $footer_second = render($page['footer_second']);
+      ?>
+
+      <?php if ($footer_first || $footer_second): ?>
+       <aside class="footer_regions">
+         <?php print $footer_first; ?>
+          <?php print $footer_second; ?>
+       </aside><!-- /.footer_regions -->
+      <?php endif; ?>
+    </div>
+  </footer>
+
+</div></div><!-- /#page /#page-wrapper -->
 
 <?php print render($page['bottom']); ?>
