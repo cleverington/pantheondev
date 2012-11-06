@@ -87,9 +87,8 @@ body {
 #site-name { /* The name of the website */
   color: darken($global-text-color, 10%);
   margin: 0;
-  font-size: 3em;
-  line-height: 1.5em;
-  @include text-shadows(.5px);
+  font-size: 3em;  
+  @include text-shadows(1px);
 
   a:link,
   a:visited {

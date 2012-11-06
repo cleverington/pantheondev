@@ -99,7 +99,8 @@ $global-a-color: lighten(rgba(107, 144, 212, 1), 20%); /* Hex: #6B90D4 */;
 
 // Custom Global @mixins
 @mixin text-shadows($pixels) {
-	text-shadow: 
+	width: 90%;
+  text-shadow: 
           $pixels $pixels $pixels lighten($global-text-color, 10%),
           ($pixels+1) ($pixels+1) ($pixels+1) lighten($global-text-color, 10%), /* end of 2 level deep grey shadow */
           ($pixels+2) ($pixels+2) 0 darken($global_background, 20%),
@@ -111,9 +112,9 @@ $global-a-color: lighten(rgba(107, 144, 212, 1), 20%); /* Hex: #6B90D4 */;
           @include transition( all 0.2s ease-in-out );
     &:hover {
     		/* CSS3 Transform Effect */
-  	@include scale( 1.05 );
+  	@include scale( 1.025 );
     padding-left: 1%;
-    width: 90%;
+    width: 100%;
     margin-left: 1%;
     }          
 }
